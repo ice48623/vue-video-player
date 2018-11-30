@@ -1,54 +1,25 @@
-[![GitHub issues](https://img.shields.io/github/issues/surmon-china/vue-video-player.svg?style=flat-square)](https://github.com/surmon-china/vue-video-player/issues)
-[![GitHub forks](https://img.shields.io/github/forks/surmon-china/vue-video-player.svg?style=flat-square)](https://github.com/surmon-china/vue-video-player/network)
-[![GitHub stars](https://img.shields.io/github/stars/surmon-china/vue-video-player.svg?style=flat-square)](https://github.com/surmon-china/vue-video-player/stargazers)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/surmon-china/vue-video-player.svg?style=flat-square)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
-
-[![NPM](https://nodei.co/npm/vue-video-player.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-video-player/)
-
-
 # Vue-Video-Player
-Video/Live player for Vue.js(1.x ~ 2.x)
-基于 [video.js](https://github.com/videojs/video.js) + [videojs-resolution-switcher](https://github.com/kmoskwiak/videojs-resolution-switcher) + [videojs-contrib-hls](https://github.com/videojs/videojs-contrib-hls) + [videojs-youtube](https://github.com/videojs/videojs-youtube) + [videojs-vimeo](https://github.com/videojs/videojs-vimeo)
+Video.js for Vue.js
 
-
-> ### V2.5.0
-> Added vimeo support
-
-> ### V2.4.5
-> ...
-
-> ### V2.4.4
-> debug，修复低级bug
-
-> ### V2.4.2
-> 优化SPA应用下的销毁方法
-
-> ### V2.4.0
-> 重构Example页面，修改获取对象的方式，优化销毁方法，增加自定义事件名称
-
-> ### 之前版本
-- [完善]：配置选项
-- [增加]：配置选项
-- [增加]：可以配置在IOS（非safari）环境下，默认播放是否全屏
-- 支持HlS流媒体（.m3u8）直播、各种普通类型视频
-- 普通视频可支持多种分辨率切换
-- 普通视频可支持多种播放速度切换
-- 可根据环境自动降级为flash播放
-- 可播放Youtube视频
-- 支持Vue.js(1.x ~ 2.x)全版本
-- 基于Video.js有丰富的API和文档支持
+# Dependency
+- [video.js](https://github.com/videojs/video.js)
+- [videojs-resolution-switcher](https://github.com/kmoskwiak/videojs-resolution-switcher)
+- [videojs-contrib-hls](https://github.com/videojs/videojs-contrib-hls)
+- [videojs-youtube](https://github.com/videojs/videojs-youtube)
+- [videojs-vimeo](https://github.com/videojs/videojs-vimeo)
 
 # Example
+Demo page from original [vue-video-player](https://github.com/surmon-china/vue-video-player)
+
 [Demo Page](https://surmon-china.github.io/vue-video-player)
 
 
 # Use Setup
 
-
 ### Install vue-video-player
 
 ``` bash
-npm install vue-video-player --save
+npm install ice48623/vue-video-player --save
 ```
 
 ``` javascript
@@ -61,14 +32,13 @@ var Vue = require('vue')
 var VideoPlayer = require('vue-video-player')
 
 // The default is to turn off some of the features, you can choose according to their use of certain features enabled, do not enable the introduction will not require the corresponding file.
-// 默认有些功能是不开启的，比如youtube国内不能用，则默认是关闭的，如果不启用对应的功能，则不会引入对应的包，减少项目代码体积，当然也有可能意味着对应的功能可能会出错，true 是开启，false是关闭，正常情况使用者不需要care就可以。
 
 // You can configure the global function switch (of course, will be covered by local switches), where non-mandatory
-// 可以在这里配置全局的功能开关（当然也会被局部开关给覆盖），这里非必选
+
 VideoPlayer.config({
-  youtube: true,  // default false（youtube的支持）
-  switcher: true, // default true（播放源切换功能）
-  hls: true       // default true（直播功能的支持）
+  youtube: true,  // default false
+  switcher: true, // default true
+  hls: true       // default true
 })
 
 // use
@@ -267,6 +237,4 @@ export default {
 
 [videojs-vimeo](https://github.com/videojs/videojs-vimeo)
 
-
-# Author Blog
-[Surmon](https://surmon.me)
+[vue-video-player](https://github.com/surmon-china/vue-video-player)

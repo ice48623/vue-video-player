@@ -1,14 +1,15 @@
- /**
- *
- * Vue-Video-Player
- * Adapted from Videojs (https://github.com/videojs/video.js)
- *
- */
+/**
+*
+* Vue-Video-Player
+* Adapted from Videojs (https://github.com/videojs/video.js)
+*
+*/
 window.WebVTT = require('videojs-vtt.js').WebVTT
 window.videojs = require('video.js')
 require('video.js/dist/alt/video-js-cdn.css')
 videojs.options.flash.swf = "https://cdn.bootcss.com/video.js/5.13.0/video-js.swf"
 var player = require('./player.vue')
+player = player.default || player
 var videoPlayerBuild = function(Vue) {
   // videoPlayer.config()
   Vue.component('video-player', player)

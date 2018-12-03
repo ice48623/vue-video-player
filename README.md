@@ -1,5 +1,5 @@
-# Vue-Video-Player
-Video.js for Vue.js
+# vue-vjs-hls
+Video.js for Vue.js with HLS support
 
 # Dependency
 - [video.js](https://github.com/videojs/video.js)
@@ -19,17 +19,17 @@ Demo page from original [vue-video-player](https://github.com/surmon-china/vue-v
 ### Install vue-video-player
 
 ``` bash
-npm install ice48623/vue-video-player --save
+npm i vue-vjs-hls
 ```
 
 ``` javascript
 // import with ES6
 import Vue from 'vue'
-import VideoPlayer from 'vue-video-player'
+import VideoPlayer from 'vue-vjs-hls'
 
 // require with Node.js/Webpack
 var Vue = require('vue')
-var VideoPlayer = require('vue-video-player')
+var VideoPlayer = require('vue-vjs-hls')
 
 // The default is to turn off some of the features, you can choose according to their use of certain features enabled, do not enable the introduction will not require the corresponding file.
 
@@ -48,7 +48,7 @@ Vue.use(VideoPlayer)
 
 // or use with component(ES6)
 import Vue from 'vue'
-import { videoPlayer } from 'vue-video-player'
+import { videoPlayer } from 'vue-vjs-hls'
 
 // use
 export default {

@@ -1,14 +1,14 @@
 {
-  "name": "vue-video-player",
+  "name": "vue-vjs-hls",
   "version": "1.0.0",
-  "description": "Video Player component for Vue.js(1.x ~ 2.x ~ 3.x)",
+  "description": "Video Player component for Vue.js(1.x ~ 2.x ~ 3.x). Forked from vue-video-player",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ice48623/vue-video-player.git"
+    "url": "git+https://github.com/ice48623/vue-video-player.git"
   },
   "keywords": [
     "vue-video-player",
@@ -17,11 +17,8 @@
     "vue video.js",
     "vue.js player"
   ],
-  "author": {
-    "name": "Thanaphat",
-    "email": "ice48623@gmail.com",
-  },
-  "license": "GPL",
+  "author": "Thanaphat <ice48623@gmail.com>",
+  "license": "GPL-3.0",
   "homepage": "https://github.com/ice48623/vue-video-player.git#readme",
   "dependencies": {
     "video.js": "^5.11.7",
@@ -29,5 +26,11 @@
     "videojs-vimeo": "^2.0.2",
     "videojs-contrib-hls": "^3.6.0",
     "videojs-resolution-switcher": "^0.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/ice48623/vue-video-player/issues"
+  },
+  "directories": {
+    "example": "examples"
   }
 }
